@@ -1,8 +1,8 @@
 
 const Discord = require("discord.js");
-const commando = require("discord.js-commando");
 const client = new Discord.Client();
 const token = 'Mzk3NjA0NjYxMjIzMzU4NDc0.DUOu1w.bs4punNWQN3QL6MPcsLUp-lcdJc'
+
 
 
 client.on('ready', () => {

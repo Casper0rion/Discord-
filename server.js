@@ -10,8 +10,20 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.reply('Pong!');
+    msg.reply('Pong!:ping_pong: ');
   }
 });
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.tts('Sky is blue');
+  }
+});
+
+
+
+
+
+
 
 client.login(token);

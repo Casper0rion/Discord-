@@ -10,10 +10,14 @@ class DiceRollCommand extends commando.Command {
     });
   }
                           
+async run(message, args) {
+  var roll = Math.floor(Math.random() * 6) + 1;
                           
-                          
-                          
-                          
+}
+}
+module.exports = DiceRollCommand
+
+1
                           
                           
                   

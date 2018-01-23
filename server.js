@@ -11,9 +11,18 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!:ping_pong: ');
+  
+    var args = message.content.substring.split(" ");
+  switch (args[0]) {
+    case "ping":
+      message.channel.sendmessage("pong");
+      break;
+  
   }
-});
+};
 
+
+       
 
 
 

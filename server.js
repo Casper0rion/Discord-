@@ -9,26 +9,19 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
+  if (msg.content === '&ping') {
     msg.reply('Pong!:ping_pong: ');
   
-    var args = message.content.substring.split(" ");
-  switch (args[0]) {
-    case "ping":
-      message.channel.sendmessage("pong");
-      break;
   
   }
-};
+});
 
-
-       
-
-
-
-
-
-
-
+client.on('message', msg => {
+  if (msg.content === '&info') {
+    msg.reply('Display bot info here');
+  
+  
+  }
+});
 
 client.login(token);

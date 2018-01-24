@@ -23,12 +23,13 @@ client.on('message', msg => {
   if (msg.content === '&ping') {
     msg.reply('Pong!:ping_pong: ');
   function geTpongwiner() {
-    return Math.floor(Math.random() * ( - min + 1) ) + min;
-}  
+    return Math.floor (Math.random() * (1,2));
+   }
+    }
   
   
   
-  }
+  
 });
 
 client.on('message', msg => {

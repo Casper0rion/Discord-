@@ -24,7 +24,7 @@ function alive()
  
 client.on('message', msg => {
   if (msg.content === '&ping') {
-    message.delete(5000)('Pong!:ping_pong: ');
+    msg.reply.delete(5000)('Pong!:ping_pong: ');
 
     function geTpongwiner() {
     return Math.floor (Math.random() * (1,2));

@@ -22,7 +22,8 @@ function alive()
 client.on('message', msg => {
   if (msg.content === '&ping') {
     msg.reply('Pong!:ping_pong: ');
-  function geTpongwiner() {
+
+    function geTpongwiner() {
     return Math.floor (Math.random() * (1,2));
    }
     }

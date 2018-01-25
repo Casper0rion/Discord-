@@ -21,20 +21,19 @@ function alive()
 {
     online = false;
 }
-
+ 
 client.on('message', msg => {
   if (msg.content === '&ping') {
-    msg.reply.delete(5000)('Pong!:ping_pong: ');
+    message.delete(5000)('Pong!:ping_pong: ');
 
     function geTpongwiner() {
     return Math.floor (Math.random() * (1,2));
    }
     }
+  });
+   
+    
   
-  
-  
-  
-});
 
 client.on('message', msg => {
   if (msg.content === '&info') {

@@ -2,8 +2,11 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const token = 'Mzk3NjA0NjYxMjIzMzU4NDc0.DUOu1w.bs4punNWQN3QL6MPcsLUp-lcdJc'
 
+// This section is completly used for Var properties only
+//REMINDER somethings may be in the settings file
+var PongW = false;
 var online = false;
-
+var uptime = 0;
 
 
 
@@ -21,7 +24,7 @@ function alive()
 
 client.on('message', msg => {
   if (msg.content === '&ping') {
-    msg.reply('Pong!:ping_pong: ');
+    msg.reply.delete(5000)('Pong!:ping_pong: ');
 
     function geTpongwiner() {
     return Math.floor (Math.random() * (1,2));
@@ -58,6 +61,12 @@ client.on('guildMemberAdd', member => {
   // Send the message, mentioning the member
   channel.send(`Welcome to the server, ${member}`);
 });
+
+
+
+
+
+
 
 
 

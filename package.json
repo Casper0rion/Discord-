@@ -25,5 +25,11 @@
     "node",
     "glitch",
     "express"
+    "discord",
+    "bot",
+    "dj",
+    "music",
+    "discorddj",
+    "discord-dj"
   ]
 }

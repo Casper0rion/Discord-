@@ -25,10 +25,6 @@ function alive()
 client.on('message', msg => {
   if (msg.content === '&ping') {
     msg.reply.delete(5000)('Pong!:ping_pong: ');
-
-    function geTpongwiner() {
-    return Math.floor (Math.random() * (1,2));
-   }
     }
   });
    
@@ -38,8 +34,7 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === '&info') {
     msg.reply('Display bot info here');
-  
-  
+    
   }
 });
 

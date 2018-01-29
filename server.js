@@ -4,12 +4,6 @@ const token = 'Mzk3NjA0NjYxMjIzMzU4NDc0.DUOu1w.bs4punNWQN3QL6MPcsLUp-lcdJc'
 
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
-var PongW = false;
-var online = false;
-var uptime = 0;
-
-
-
 
 
 

@@ -2,5 +2,8 @@ jan 29
 Package update downtime apx 15m--fixed
 &avatar was spaming url's --fixed
 commando intagration process started
-Installed ytdl in prep for music intagration
+Installed ytdl in prep for music intagration --added 
 failed attempt at watch statement *(posibly missing some kind of prior arg)
+installed ESLint for cleaner more optmized code and discord.js and commando link --added
+
+

@@ -44,7 +44,7 @@ client.on('message', message => {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }
-});
+}); //All fixed enjoy
 
 // Create an event listener for new guild members
 client.on('guildMemberAdd', member => {

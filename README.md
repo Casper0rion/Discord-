@@ -6,7 +6,7 @@ The administrative server helper bot
 
 ** Plans and already completed fetures 
 
- ~~1. Bot Online ~~
+ ~~1. Bot Online~~
  ~~2. Bot pong~~
  ~~3. Avatar fetching~~
  4. Administration (kick,ban,ect)

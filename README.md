@@ -24,3 +24,4 @@ Most of the modules below require node-gyp, which is known for causing problems 
 * `sodium`: For faster audio encryption
 * `bufferutil`: For faster WebSockets
 * `utf-8-validate`: For faster WebSockets
+# Discord-

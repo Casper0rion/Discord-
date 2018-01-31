@@ -89,5 +89,4 @@ else if (message.content === '${prefix}server') {
 
 
 
-
 client.login(config.token);

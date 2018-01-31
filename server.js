@@ -24,21 +24,21 @@ client.on('message', msg => {
   });
    
 
-client.on('message', msg => {
-  if (msg.content === '&info') {
+
+else if (msg.content === '${prefix}info') {
     msg.reply('Display bot info here');
     
   }
-});
+);
 
 // Create an event listener for messages
-client.on('message', message => {
+
   // If the message is "what is my avatar"
   if (message.content === '&avatar') {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }
-});
+);
 
 // Create an event listener for new guild members
 client.on('guildMemberAdd', member => {
@@ -51,7 +51,9 @@ client.on('guildMemberAdd', member => {
 });
 
 
-
+else if (message.content === '${prefix}server') {
+  message.channel.send('The curent server is: ${message.guild.name}');
+}
 
 
 

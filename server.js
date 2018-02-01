@@ -17,24 +17,24 @@ function alive()
     online = false;
 }
  
-client.on('message', msg => {
-  if (msg.content === '&ping') {
-    msg.reply.delete(5000)('Pong!:ping_pong: ');
+client.on('message', message => {
+    if (message.content === '${prefix}ping') {
+        message.channel.send('Pong :ping_pong:!.');
     }
-  });
+});
    
 
 
-else if (msg.content === '${prefix}info') {
+if (msg.content === '${prefix}info') {
     msg.reply('Display bot info here');
     
   }
-);
+});
 
 // Create an event listener for messages
 
   // If the message is "what is my avatar"
-  if (message.content === '&avatar') {
+else  if (message.content === '&avatar') {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }

@@ -3,8 +3,7 @@ The administrative server helper bot
 
 
 
-
-** Plans and already completed fetures 
+## ** Plans and already completed fetures
 
  ~~1. Bot Online~~
  ~~2. Bot pong~~

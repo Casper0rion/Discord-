@@ -25,10 +25,10 @@ client.on('message', message => {
    
 
 
-if (msg.content === '${prefix}info') {
+else if (msg.content === '${prefix}info') {
     msg.reply('Display bot info here');
     
-  };
+  }
 
 
 
@@ -37,7 +37,7 @@ else  if (message.content === '&avatar') {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }
-);
+
 
 // Create an event listener for new guild members
 client.on('guildMemberAdd', member => {

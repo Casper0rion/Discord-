@@ -28,12 +28,11 @@ client.on('message', message => {
 if (msg.content === '${prefix}info') {
     msg.reply('Display bot info here');
     
-  }
-});
+  };
 
-// Create an event listener for messages
 
-  // If the message is "what is my avatar"
+
+ 
 else  if (message.content === '&avatar') {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);

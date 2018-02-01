@@ -5,7 +5,7 @@ const { prefix, token } = require('./config.json');
 
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
-var online = false
+var online = false;
 
 
 client.on('ready', () => {
@@ -24,11 +24,11 @@ client.on('message', async message => {
         message.channel.send('Pong :ping_pong:!.');
     }
 
-else if (msg.content === '${prefix}info') {
-    msg.reply('Display bot info here');
+else if (message.content === '${prefix}info') {
+    message.reply('Display bot info here');
     
   }
-else  if (message.content === '&avatar') {
+else if (message.content === '&avatar') {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
 }

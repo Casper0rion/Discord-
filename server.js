@@ -5,7 +5,7 @@ const { prefix, token } = require('./config.json');
 
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
-var online = true;
+
 
 
 client.on('ready', () => {
@@ -54,11 +54,3 @@ channel.send(`Welcome to the server, ${member}`);
 });
 
 
-//thx one more question if u dont mind
-//can i call var's from .env?
-//like call it in the .config
-//how else are u supposed to secure the token then i just generate a new one if i need help witch i try to avoid bc i hate 
-// nope i think i am good i really appreciate this. Been strugleing with this for a good bit now
-//use the share button. They cant see .env with that. 
-//No problem. Good luck!
-//thx

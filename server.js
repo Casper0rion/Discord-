@@ -5,7 +5,7 @@ const { prefix, token } = require('./config.json');
 
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
-var online = false;
+var online = true;
 
 
 client.on('ready', () => {

@@ -6,7 +6,28 @@ client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!:ping_pong: ');
     
+  ///Junk file broken code that i will try to fix latter  
     
-    
-    
+   const commando = require ("discord.js-commando")
+
+class DiceRollCommand extends commando.Command {
+  constructor(client){
+    super(client, {
+      name: 'roll',
+      group: 'random',
+      memberName: 'roll',
+      description: 'Rolls A Dice'
+    });
+  }
+                          
+async run(message, args) {
+  var roll = Math.floor(Math.random() * 6) + 1;
+  message.reply("Your roll was" + roll)
+}
+}
+module.exports = DiceRollCommand
+
+
+                          
+                           
     

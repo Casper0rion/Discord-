@@ -47,18 +47,8 @@ client.on('guildMemberAdd', member => {
   // Send the message, mentioning the member
 channel.send(`Welcome to the server, ${member}`);
 });
-//SHould run fine now
-  //just finish defines
-  //Ive never tried to do that, so im going to say no. But im not entirely sure. 
+ 
   client.login(config.token);
 });
 
 
-//thx one more question if u dont mind
-//can i call var's from .env?
-//like call it in the .config
-//how else are u supposed to secure the token then i just generate a new one if i need help witch i try to avoid bc i hate 
-// nope i think i am good i really appreciate this. Been strugleing with this for a good bit now
-//use the share button. They cant see .env with that. 
-//No problem. Good luck!
-//thx

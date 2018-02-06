@@ -5,18 +5,14 @@ const { prefix, token } = require('./config.json');
 
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
-var online = true;
+
 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-function alive()
-{
-    online = false;
-}
- 
+
 client.on('message', async message => {
   ///This is where your error starts. The final } in the last line should correspond with this.
   

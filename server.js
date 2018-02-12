@@ -2,11 +2,9 @@
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
-  response.sendStatus(200);
+  response.sendStatus.catch(200);
 });
 app.listen(process.env.PORT);
-
-
 
 const Discord = require("discord.js");
 const client = new Discord.Client();

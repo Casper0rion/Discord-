@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -6,10 +7,12 @@ app.get("/", (request, response) => {
 app.listen(process.env.PORT);
 
 
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
-const { prefix, token } = require('./config.json');
+const { prefix } = require('./config.json');
+
 
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
@@ -22,7 +25,6 @@ client.on('ready', () => {
 
 
 client.on('message', async message => {
-  ///This is where your error starts. The final } in the last line should correspond with this.
   
     if (message.content === '${prefix}ping') {
         message.channel.send('Pong :ping_pong:!.');
@@ -52,7 +54,8 @@ client.on('guildMemberAdd', member => {
 channel.send(`Welcome to the server, ${member}`);
 });
  
-  client.login(process.env.SECRET);
 });
+
+client.login(process.env.TOKEN);
 
 

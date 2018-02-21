@@ -1,32 +1,32 @@
 const express = require("express");
 const app = express();
 app.get("/", (request, response) => {
-  response.sendStatus.catch(200);
+  response.sendStatus(200);
 });
 app.listen(process.env.PORT);
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const { prefix } = require("./config.json");
 
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
+var prefix = "&";
+var token = "NDEyNjYwMTgyMzY4MjU2MDAw.DW3ZSg.8_Pa_RJruXFgmYu3R4E90hrZICg";
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on("message", async message => {
-  if (message.content === "${prefix}Ping") {
+  if (message.content === "&ping") {
     message.channel.send("Pong :ping_pong:!.");
-  } else if (message.content === "${prefix}Info") {
+  } else if (message.content === "&info") {
     message.reply("Display bot info here");
-  } else if (message.content === "&Avatar") {
+  } else if (message.content === "&avatar") {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
-  } else if (message.content === "${prefix}Server") {
+  } else if (message.content === "&server") {
     message.channel.send("The curent server is: ${message.guild.name}");
-    ///So lets start with this. What exactly are you trying to do here?
   }
   // Create an event listener for new guild members
   client.on("guildMemberAdd", member => {
@@ -39,4 +39,4 @@ client.on("message", async message => {
   });
 });
 
-client.login(process.env.TOKEN);
+client.login(token);

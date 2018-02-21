@@ -11,7 +11,7 @@ const client = new Discord.Client();
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
 var prefix = "&";
-var token = "NDEyNjYwMTgyMzY4MjU2MDAw.DW3ZSg.8_Pa_RJruXFgmYu3R4E90hrZICg";
+var token = "";
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);

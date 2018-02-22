@@ -20,7 +20,7 @@ client.on("ready", () => {
 client.on("message", message => {
   if (message.content === "&Help") {
     message.channel.send(
-      "```Hello my name is Glacium, I have the folloing commands &Help(Pulls up this help menu) &Info(Displays the info for the bot)&Server(Displays the server that you are curently on &Avatar(Pulls your avatar and puts it in chat) &ping(Pings a ball back to you))"
+      "```Hello my name is Glacium, I have the folloing commands &Help(Pulls up this help menu) &Info(Displays the info for the bot)&Server(Displays the server that you are curently on &Avatar(Pulls your avatar and puts it in chat) &ping(Pings a ball back to you)```)"
     );
   }
 });

@@ -1,10 +1,3 @@
-const express = require("express");
-const app = express();
-app.get("/", (request, response) => {
-  response.sendStatus(200);
-});
-app.listen(process.env.PORT);
-
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
@@ -20,7 +13,7 @@ client.on("ready", () => {
 client.on("message", message => {
   if (message.content === "&Help") {
     message.channel.send(
-      "```Hello my name is Glacium, I have the folloing commands &Help(Pulls up this help menu) &Info(Displays the info for the bot)&Server(Displays the server that you are curently on &Avatar(Pulls your avatar and puts it in chat) &ping(Pings a ball back to you))"
+      "```Hello my name is Glacium, I have the folloing commands &Help(Pulls up this help menu) &Info(Displays the info for the bot)&Server(Displays the server that you are curently on &Avatar(Pulls your avatar and puts it in chat) &ping(Pings a ball back to you)```)"
     );
   }
 });

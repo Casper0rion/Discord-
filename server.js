@@ -18,22 +18,17 @@ client.on("message", async message => {
   } else if (message.content === "&avatar") {
     message.reply(message.author.avatarURL);
   } else if (message.content === "&server") {
-    message.channel.send("The curent server is: ${message.guild.name}");
+    message.channel.send("The curent server is: "${message.guild.name});
   } else if (message.content === "&Help") {
     message.channel.send(
-      ```Hello my name is Glacium, I have the folloing commands 
-&Help(Pulls up this help menu) 
-&Info(Displays the info for the bot)
-&Server(Displays the server that you are curently on 
-&Avatar(Pulls your avatar and puts it in chat) 
-&ping(Pings a ball back to you)```
+      "```Hello my name is Glacium, I have the folloing commands                                &Help(Pulls up this help menu)                             &Info(Displays the info for the bot)                                     &Server(Displays the server that you are curently on                                &Avatar(Pulls your avatar and puts it in chat)                          &ping(Pings a ball back to you)```"
     );
   }
 
   // Create an event listener for new guild members
   client.on("guildMemberAdd", member => {
     // Send the message to a designated channel on a server:
-    const channel = member.guild.channels.find("name", "member-log");
+    const channel = member.guild.ch1annels.find("name", "member-log");
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member

@@ -21,12 +21,7 @@ client.on("message", async message => {
     message.channel.send("/tts The curent server is:, ${message.guild.name}");
   } else if (message.content === "&Help") {
     message.channel.send(
-      "```Hello Im Glacium We have the folloing Commands &Help, &server, &avatar, &info &ping",
-      "&server(Shows you the current server that you are on)",
-      "&info(Presents you the information on the bot)",
-      "&ping(Pings a ball back to you)",
-      "&avatar(Provides you a link and an full sized image of your profile picture )",
-      "Help(Pulls up this menu```)"
+      "```Hello Im Glacium We have the folloing Commands &Help, &server, &avatar, &info &ping```"
     );
   }
 

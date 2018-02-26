@@ -4,7 +4,7 @@ const client = new Discord.Client();
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
 var prefix = "&";
-var token = "";
+var token = "NDEyNjYwMTgyMzY4MjU2MDAw.DW3ZSg.8_Pa_RJruXFgmYu3R4E90hrZICg";
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -18,20 +18,21 @@ client.on("message", async message => {
   } else if (message.content === "&avatar") {
     message.reply(message.author.avatarURL);
   } else if (message.content === "&server") {
-    message.channel.send("The curent server is: ${message.guild.name}");
-  } else if (message.content === "&server") {
+    message.channel.send("/tts The curent server is:", "${message.guild.name}");
+  } else if (message.content === "&Help") {
     message.channel.send(
-      ```Hello my name is Glacium, I have the folloing commands &Help(Pulls up this help menu) &Info(Displays the info for the bot)&Server(Displays the server that you are curently on &Avatar(Pulls your avatar and puts it in chat) &ping(Pings a ball back to you)```
+      "```Hello Im Glacium We have the folloing Commands &Help, &server, &avatar, &info &ping",
+      "&server(Shows you the current server that you are on)",
+      "&info(Presents you the information on the bot)",
+      "&ping(Pings a ball back to you)",
+      "&avatar(Provides you a link and an full sized image of your profile picture )",
+      "Help(Pulls up this menu)"
     );
   }
 
-  // Create an event listener for new guild members
   client.on("guildMemberAdd", member => {
-    // Send the message to a designated channel on a server:
     const channel = member.guild.channels.find("name", "member-log");
-    // Do nothing if the channel wasn't found on this server
     if (!channel) return;
-    // Send the message, mentioning the member
     channel.send(`Welcome to the server, ${member}`);
   });
 });

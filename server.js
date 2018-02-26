@@ -26,7 +26,7 @@ client.on("message", async message => {
       "&info(Presents you the information on the bot)",
       "&ping(Pings a ball back to you)",
       "&avatar(Provides you a link and an full sized image of your profile picture )",
-      "Help(Pulls up this menu)"
+      "Help(Pulls up this menu)"```
     );
   }
 

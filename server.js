@@ -6,6 +6,7 @@ const client = new Discord.Client();
 
 var prefix = "&";
 var token = "";
+<client>.user.setGame(The NSA)</client>;
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);

@@ -18,7 +18,7 @@ client.on("message", async message => {
   } else if (message.content === "&avatar") {
     message.reply(message.author.avatarURL);
   } else if (message.content === "&server") {
-    message.channel.tts.send("The curent server is ${message.guild.name}");
+    message.channel.reply.tts("The curent server is ${message.guild.name}");
   } else if (message.content === "&Help") {
     message.channel.send(
       "```Hello Im Glacium We have the folloing Commands &Help, &server, &avatar, &info &ping```"

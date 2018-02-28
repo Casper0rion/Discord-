@@ -8,8 +8,7 @@ var prefix = "&";
 var token = "";
 
 client.on("ready", () => {
-  console.log.client.user.setActivity("<The NSA>", { type: "WATCHING" });
-  `Logged in as ${client.user.tag}!`;
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on("message", async message => {
@@ -19,10 +18,10 @@ client.on("message", async message => {
     message.reply("Display bot info here");
   } else if (message.content === "&avatar") {
     message.reply(message.author.avatarURL);
-  } else if (message.content === "&server") {
-    message.channel.reply.tts("The curent server is ${message.guild.name}");
   } else if (message.content === "&owner") {
     message.channel.reply.tts(`The owner is, <@user 202069208408915968>`);
+  } else if (message.content === "&server") {
+    message.channel.reply.tts("The curent server is ${message.guild.name}");
   } else if (message.content === "&Help") {
     message.channel.send(
       "```Hello Im Glacium We have the folloing Commands &Help, &server, &avatar, &info &ping```"

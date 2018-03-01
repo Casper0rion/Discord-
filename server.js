@@ -19,7 +19,7 @@ client.on("message", async message => {
   } else if (message.content === "&avatar") {
     message.reply(message.author.avatarURL);
   } else if (message.content === "&owner") {
-    message.channel.send(`The owner is,`<@user 202069208408915968>);
+    message.channel.send(`The owner is, <@!202069208408915968>`);
   } else if (message.content === "&server") {
     message.channel.send(`The curent server is ${message.guild.name}`);
   } else if (message.content === "&Help") {

@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-
+const ytdl = require("ytdl-core");
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
 
@@ -26,6 +26,8 @@ client.on("message", async message => {
     message.channel.send(
       "```Hello Im Glacium We have the folloing Commands &Help, &server, &avatar, &info &ping```"
     );
+  } else if (message.content === "&owner") {
+    message.channel.send(`The owner is, <@!202069208408915968>`);
   }
 
   client.on("guildMemberAdd", member => {

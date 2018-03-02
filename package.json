@@ -14,7 +14,8 @@
     "discord.js-commando": "^0.9.0",
     "eslint": "4.18.1",
     "express": "^4.16.2",
-    "ytdl": "^0.10.0"
+    "ytdl": "^0.10.0",
+    "ytdl-core": "0.20.2"
   },
   "engines": {
     "node": "8.x"

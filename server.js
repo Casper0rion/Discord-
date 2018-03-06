@@ -1,6 +1,10 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const ytdl = require("ytdl-core");
+
+process.on("unhandledRejection", error =>
+  console.error(`Uncaught Promise Rejection:\n${error}`)
+);
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
 

@@ -2,6 +2,8 @@ const ytdl = require("ytdl-core");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+var token = ``;
+
 client.on(`message`, message => {
   if (message.content == `&play radio`) {
     if (message.channel.type !== `text`) return;
@@ -23,3 +25,4 @@ client.on(`message`, message => {
     });
   }
 });
+client.login(token);

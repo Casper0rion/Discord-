@@ -24,7 +24,7 @@ client.on("message", async message => {
     message.channel.send(`The curent server is ${message.guild.name}`);
   } else if (message.content === "&Help") {
     message.channel.send(
-      "```Hello Im Glacium We have the folloing Commands &Help, &server, &avatar, &info &ping```"
+      "```Hello Im Glacis We have the folloing Commands &Help, &server, &avatar, &info, &owner &ping```"
     );
   } else if (message.content === "&owner") {
     message.channel.send(`The owner is, <@!202069208408915968>`);

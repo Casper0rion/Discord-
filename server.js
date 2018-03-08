@@ -8,7 +8,6 @@ process.on("unhandledRejection", error =>
 // This section is completly used for Var properties only
 //REMINDER somethings may be in the settings file
 
-var prefix = "&";
 var token = "";
 
 client.on("ready", () => {

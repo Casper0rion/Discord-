@@ -13,7 +13,8 @@ const music = new music(client, {
   youtubekey: `AIzaSyC71b1kiwvsdLWOoKbEfZU5MX3El4ztz4U`,
   prefix: `&`,
   maxqQueueSize: `100`,
-  playCmd: `play`
+  playCmd: `play`,
+  leaveCmd: `leave`
 });
 
 client.login(token);

@@ -1,7 +1,7 @@
 const ytdl = require("ytdl-core");
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const music = require(`discord.js-musicbot-addon-v2`);
+const Music = require(`discord.js-musicbot-addon-v2`);
 
 var token = ``;
 
@@ -11,10 +11,26 @@ process.on(`unhandledRejection`, error =>
 
 const music = new music(client, {
   youtubekey: `AIzaSyC71b1kiwvsdLWOoKbEfZU5MX3El4ztz4U`,
-  prefix: `&`,
+  botPrefix: `&`,
   maxqQueueSize: `100`,
   playCmd: `play`,
-  leaveCmd: `leave`
+  leaveCmd: `leave`,
+  messageHelp: true,
+  botAdmins: `202069208408915968, `,
+  embedColor: ``,
+  botOwner: `202069208408915968`,
+  requesterName: true,
+  skipCmd: `skip`,
+  skipHelp: `&skip skips the current song`,
+  leaveHelp: `This command kicks the bot from the channel`,
+  playHelp: `This command plays a given song from youtube`,
+  queueCmd: `queue`,
+  disablePause: true,
+  disableResume: true,
+  volumeCmd: `volume`,
+  volumeHelp: `Use this command to change the volume of the music use 1-100`,
+  ownerOverMember: true,
+  ownerCmd: `boss`
 });
 
 client.login(token);

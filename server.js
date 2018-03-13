@@ -24,13 +24,12 @@ client.on("message", async message => {
   } else if (message.content === "&owner") {
     message.channel.send(`The owner is, <@!202069208408915968>`);
   } else if (message.content === "&server") {
-    message.channel.send(`The curent server is ${message.guild.name}`);
+    message.channel.reply(`The curent server is ${message.guild.name}`);
   } else if (message.content === "&Help") {
     message.channel.send(
       "```Hello Im Glacis We have the folloing Commands &Help, &server, &avatar, &info, &owner &ping__ Music Commands are &musichelp```"
     );
-
-
+  }
 
   client.on("guildMemberAdd", member => {
     const channel = member.guild.channels.find("name", "member-log");

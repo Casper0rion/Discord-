@@ -1,7 +1,6 @@
-const ytdl = require("ytdl-core");
 const Discord = require("discord.js");
+const Music = require(`discord.js-musicbot-addon`);
 const client = new Discord.Client();
-const Music = require(`discord.js-musicbot-addon-v2`);
 
 var token = ``;
 
@@ -9,7 +8,7 @@ process.on(`unhandledRejection`, error =>
   console.error(`Uncaught Promise Rejection:\n ${error}`)
 );
 
-const music = new music(client, {
+const music = new Music(client, {
   youtubekey: `AIzaSyC71b1kiwvsdLWOoKbEfZU5MX3El4ztz4U`,
   botPrefix: `&`,
   maxqQueueSize: `100`,

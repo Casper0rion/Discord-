@@ -9,7 +9,7 @@ process.on(`unhandledRejection`, error =>
 );
 
 const music = new Music(client, {
-  youtubekey: "AIzaSyA618O6_eJTf9NLyfjsctwl2h1AIGVZOfo0",
+  youtubeKey: "AIzaSyA618O6_eJTf9NLyfjsctwl2h1AIGVZOfo0",
   botPrefix: `&`,
   maxqQueueSize: `100`,
   playCmd: `play`,

@@ -9,13 +9,13 @@ process.on(`unhandledRejection`, error =>
 );
 
 const music = new Music(client, {
-  youtubekey: `AIzaSyA618O6_eJTf9NLyfjsctwl2h1AIGVZOfo0`,
+  youtubekey: "AIzaSyA618O6_eJTf9NLyfjsctwl2h1AIGVZOfo0",
   botPrefix: `&`,
   maxqQueueSize: `100`,
   playCmd: `play`,
   leaveCmd: `leave`,
   messageHelp: true,
-  botAdmins: `202069208408915968, `,
+  botAdmins: `202069208408915968`,
   embedColor: ``,
   botOwner: `202069208408915968`,
   requesterName: true,

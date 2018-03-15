@@ -37,10 +37,11 @@ const music = new Music(client, {
   enableQueueStat: true,
   anyoneCanAdjust: true,
   anyoneCanLeave: true,
-  logging: false,
-  enableAliveMessage: false,
-  disablePlay: false,
-  disableHelp: false
+  logging: true,
+  enableAliveMessage: true,
+  disablePlay: true,
+  disableHelp: true,
+  disableLoop: true
 });
 
 client.login(token);

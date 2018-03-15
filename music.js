@@ -4,6 +4,10 @@ const client = new Discord.Client();
 
 var token = ``;
 
+client.on("ready", () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
 process.on(`unhandledRejection`, error =>
   console.error(`Uncaught Promise Rejection:\n ${error}`)
 );

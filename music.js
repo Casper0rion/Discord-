@@ -15,8 +15,8 @@ process.on(`unhandledRejection`, error =>
 
 const music = new Music(client, {
   youtubeKey: "AIzaSyA618O6_eJTf9NLyfjsctwl2h1AIGVZOfo0",
-  botPrefix: "&",
-  maxqQueueSize: "100",
+  prefix: "&",
+  maxQueueSize: "100",
   playCmd: "play",
   leaveCmd: "leave",
   messageHelp: true,

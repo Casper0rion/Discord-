@@ -20,9 +20,9 @@ const music = new Music(client, {
   playCmd: "play",
   leaveCmd: "leave",
   messageHelp: true,
-  botAdmins: "202069208408915968",
+  botAdmins: [202069208408915968],
   embedColor: `#24bce2`,
-  botOwner: "202069208408915968",
+  botOwner: [202069208408915968],
   requesterName: true,
   skipCmd: "skip",
   skipHelp: "&skip skips the current song",
@@ -40,9 +40,9 @@ const music = new Music(client, {
   anyoneCanLeave: true,
   logging: true,
   enableAliveMessage: true,
-  disablePlay: true,
-  disableHelp: true,
-  disableLoop: true
+  disablePlay: false,
+  disableHelp: false,
+  disableLoop: false
 });
 
 client.login(token);

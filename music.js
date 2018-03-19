@@ -22,7 +22,7 @@ const music = new Music(client, {
   messageHelp: true,
   botAdmins: [202069208408915968],
   embedColor: `#24bce2`,
-  botOwner: [202069208408915968],
+  botOwner: `202069208408915968`,
   requesterName: true,
   skipCmd: "skip",
   skipHelp: "&skip skips the current song",

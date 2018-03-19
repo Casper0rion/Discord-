@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const ytdl = require("ytdl-core");
 const Music = require(`discord.js-musicbot-addon`);
 const client = new Discord.Client();
 

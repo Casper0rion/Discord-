@@ -5,9 +5,9 @@
   "name": "Glacium",
   "version": "0.1.0",
   "description": "What am I about?",
-  "main": "server.js",
+  "main": "music.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node music.js"
   },
   "dependencies": {
     "discord.js": "^11.3.0",

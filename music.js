@@ -17,7 +17,6 @@ const music = new Music(client, {
   youtubeKey: "AIzaSyA618O6_eJTf9NLyfjsctwl2h1AIGVZOfo0",
   prefix: "&",
   maxQueueSize: "100",
-  playCmd: "play",
   leaveCmd: "leave",
   messageHelp: true,
   botAdmins: [202069208408915968],
